@@ -1,0 +1,31 @@
+main{
+    width: 768px;
+    margin: 32px auto;
+}
+a{
+    color: #ff0;
+}
+
+#linea,
+#bloque
+{
+    margin: 40px 0px;
+    padding: 16px;
+    background-color: #5b5b5b;
+}
+span,
+a{
+    /* display: block; */
+    width: 200px;
+    height: 24px;
+    margin: 16px;
+    background-color: #333;
+}
+#bloque h3,
+#bloque article{
+    /* display: inline; */
+    width: 416px;
+    height: 40px;
+    margin: 8px;
+    background-color: #333;
+}
