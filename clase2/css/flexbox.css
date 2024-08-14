@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: "Anek Devanagari", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: #241d1d;
+    color: #db6e6e;
+}
+h1, h2{
+    font-weight: 300;
+}
+main{
+    width: 768px;
+    margin: 24px auto;
+}
+    main section{
+        background-color: #1a1515;
+        height: 320px;
+        margin-bottom: 32px;
+    }
+    
+    main section article{
+        width: 96px;
+        height: 96px;
+        background-color: #131212;
+        border: 1px solid #332626;
+    }
+
+/* eje X horizontal */
+    #horizontal{
+        display: flex;
+        /* Distribución en el eje horizontal */
+        /* justify-content: start; /* Predeterminado: a la izquierda */
+        /* justify-content: end; /* a la derecha */
+        /* justify-content: center; /* centrado */
+        /* Distribución de los espacios sobrantes */
+        justify-content: space-evenly;
+    }
+
+/* eje Y vertical */
+    #vertical{
+        display: flex;
+        /* Distribución en el eje vertical */
+        /* align-items: start; /* Predeterminado: arriba */
+        /* align-items: end; /* abajo */
+        align-items: center;
+    }
