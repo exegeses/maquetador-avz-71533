@@ -7,3 +7,22 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+/* 1024 */
+#testimonios{
+    width: 1024px;
+    height: 415px;
+    margin: auto;
+    padding: 0px 24px;
+    background-color: #ABABAB;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    #testimonios article{
+        width: 304px;
+        height: 305px;
+        padding: 24px 16px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
