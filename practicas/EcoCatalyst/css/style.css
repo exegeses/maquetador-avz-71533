@@ -4,9 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --textos: hsl(172, 37%, 8%);
+    --cyan: hsl(174, 80%, 50%);
+    --gris: hsl(180, 28%, 93%);
+}
 body{
     font-family: "Poppins", sans-serif;
-    color: #0D1C1A;
+    color: var(--textos);
 }
 a{
     text-decoration: none;
@@ -25,7 +30,88 @@ header{
 
     header nav a{
         padding: 12px;
+        font-size: 20px;
+        color: var(--textos);
     }
+    /* botón sign up */
+    header nav a:nth-child(4){
+        padding: 12px 16px;
+        border-radius: 8px;
+        background-color: var(--cyan);
+    }
+    header nav a:nth-child(4):hover{
+        background-color: hsl(174, 100%, 40%);
+        color: white;
+    }
+    /* botón log in */
+    header nav a:nth-child(5){
+        margin-left: 12px;
+        padding: 12px 16px;
+        border-radius: 8px;
+        background-color: var(--gris);
+    }
+    header nav a:nth-child(5):hover{
+        background-color: hsl(180, 28%, 80%);
+    }
+/* main */
+main{
+    width: 1024px;
+    margin: auto;
+}
+    #hero-banner{
+        height: 528px;
+        margin-top: 40px;
+        padding: 16px;
+        background-image: url(../imgs/hero-benner.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+        #hero-banner article{
+            margin-top: 252px;
+            margin-left: 24px;
+            width: 688px;
+            padding: 8px 24px;
+            background-color: hsla(172, 37%, 8%, 40%);
+            color: white;
+        }
+            #hero-banner article h1{
+                margin-bottom: 16px;
+                font-size: 48px;
+                font-weight: 700;
+            }
+            #hero-banner form{
+                width: 688px;
+                height: 64px;
+                margin: 24px;
+                padding: 8px 16px;
+                background-color: #fff;
+                border-radius: 16px;
+
+                display: flex;
+                align-items: center;
+            }
+                #hero-banner form input{
+                    width: 512px;
+                    padding: 16px;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    color: var(--textos);
+                    font-size: 20px;
+
+                }
+                #hero-banner form button{
+                    width: 140px;
+                    padding: 12px;
+                    background-color: var(--cyan);
+                    border: none;
+                    border-radius: 12px;
+
+                    font-family: "Poppins", sans-serif;
+                    color: var(--textos);
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
 
 
 /*1024 >
