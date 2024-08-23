@@ -22,6 +22,7 @@ header{
     width: 1280px;
     height: 64px;
     margin: auto;
+    padding: 0px 40px;
 
     display: flex;
     justify-content: space-between;
@@ -110,11 +111,100 @@ main{
                     color: var(--textos);
                     font-size: 16px;
                     font-weight: 600;
+
+                    cursor: pointer;
                 }
+/* how-we section */
+    #how-we{
+        width: 768px;
+        margin-top: 24px;
+        padding-left: 16px;
+    }
+        #how-we h2{
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
 
+/* why-choose section */
+    #why-choose{
+        margin-top: 40px;
+        padding: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        #why-choose h3{
+            /* width: calc(1024px - 32px); */
+            /* width: 100% */
+            margin-right: 600px;
+            margin-bottom: 24px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        #why-choose article{
+            width: 300px;
+            padding: 16px;
+            border: 1px solid hsl(167, 33%, 86%);
+            border-radius: 8px;
+            background-color: hsl(156, 45%, 98%);
+            transition: .5s;
+        }
+        #why-choose article:hover{
+            background-color: hsl(174, 31%, 45%);
+        }
 
+            #why-choose article svg{
+                width: 24px;
+                fill: hsl(174, 31%, 45%);
+            }
+            #why-choose article:hover svg{
+                fill: white;
+            }
+            #why-choose article:hover h4,
+            #why-choose article:hover p
+            {
+                color: white;
+            }
 
-/*1024 >
-768 >
+            #why-choose article h4{
+                font-weight: 600;
+            }
+            #why-choose article p{
+                color: hsl(174, 31%, 45%);
+                font-size: 14px;
+            }
+
+footer{
+    height: 156px;
+}
+
+/* ############## 1024 ############### */
+@media screen and (max-width: 1024px) {
+    header{
+        width: 1024px;
+        padding: 0px 8px;
+    }
+}
+/* ############## 1024 ############### */
+@media screen and (max-width: 768px) {
+    header{
+        width: 768px;
+        height: 40px;
+        padding: 0px 16px;
+    }
+    #hero-banner{
+        width: 768px;
+        background-size: 736px 480px;
+    }
+    #why-choose{
+        margin-top: 44px;
+    }
+        #why-choose article{
+            width: 100%;
+        }
+}
+
+/*
 640 >
 */
