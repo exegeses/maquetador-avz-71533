@@ -1,0 +1,32 @@
+body{
+    background-color: hsl(142, 22%, 10%);
+    width: 768px;
+    margin: auto;
+}
+main{
+    margin: 80px 0px;
+    background-color: hsl(142, 22%, 20%);
+    min-height: 600px;
+}
+    section{
+        height: 380px;
+        background-color: hsl(142, 22%, 30%);
+    }
+    section:hover #naranja{
+        transform:  translateY(-120px)
+                    translateX( calc(640px - 156px) );
+    }
+
+    #verde{
+        width: 156px;
+        height: 120px;
+        background-color: hsl(142, 50%, 60%);
+    }
+    #naranja{
+        width: 156px;
+        height: 120px;
+        background-color: hsl(40, 50%, 60%);
+        transform: translateY(-120px)
+                   translateX( calc(768px - 156px) );
+        transition: .5s;
+    }

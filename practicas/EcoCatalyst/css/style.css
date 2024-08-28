@@ -54,6 +54,10 @@ header{
     header nav a:nth-child(5):hover{
         background-color: hsl(180, 28%, 80%);
     }
+    #btn-menu{
+        display: none;
+    }
+
 /* main */
 main{
     width: 1024px;
@@ -145,6 +149,7 @@ main{
         #why-choose article{
             width: 300px;
             padding: 16px;
+            margin-bottom: 16px;
             border: 1px solid hsl(167, 33%, 86%);
             border-radius: 8px;
             background-color: hsl(156, 45%, 98%);
@@ -186,7 +191,7 @@ footer{
         padding: 0px 8px;
     }
 }
-/* ############## 1024 ############### */
+/* ############## 768 ############### */
 @media screen and (max-width: 768px) {
     header{
         width: 768px;
@@ -205,6 +210,39 @@ footer{
         }
 }
 
-/*
-640 >
-*/
+@media (max-width: 640px){
+    header{
+        width: 640px;
+        padding: 0;
+        display: block;
+
+    }
+        header nav{
+            background-color: #fff;
+            position: relative;
+            z-index: 10;
+            transform: translateY(-310px);
+            transition: .5s;
+        }
+        .show-menu{
+            transform: translateY(0px);
+        }
+        header nav a{
+            display: block;
+        }
+        header a:nth-child(1){
+            position: relative;
+            z-index: 20;
+            top: 8px;
+            left: 8px;
+            background-color: #fff;
+        }
+        header nav a:nth-child(5) {
+            margin-left: 0px;
+        }
+    #btn-menu{
+        display: block;
+        transform: translateY( -294px )
+                   translateX( 608px );
+    }
+}
