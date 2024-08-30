@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(214, 36%, 14%);
+    color: hsl(214, 36%, 86%);
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+}
+
+    main{
+        width: 768px;
+        margin: 40px auto;
+    }
+    #primero{
+        margin: 32px 0px;
+    }
+    #primero a{
+        padding: 12px 40px;
+        border-radius: 8px;
+        background-color: hsl(214, 50%, 50%);
+        color: hsl(214, 36%, 86%);
+    }
+    #primero a:hover{
+        background-color: hsl(214, 80%, 60%);
+        color: hsl(214, 100%, 86%);
+    }
+    #primero a:active{
+        background-color: hsl(0, 80%, 60%);
+    }
+    #segundo{
+        background-color: hsl(130, 50%, 36%);
+        width: 328px;
+        padding: 40px;
+        border-radius: 8px;
+    }
+
+/* para el toggler */
+    .destacado{
+        border: 8px solid hsl(130, 54%, 60%);
+    }

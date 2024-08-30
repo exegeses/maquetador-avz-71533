@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(215, 36%, 14%);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 1024px;
+    height: 64px;
+    margin: auto;
+    padding: 0px 16px;
+    background-color: hsl(215, 37%, 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* barra de navegación */
+    header nav a{
+        padding: 16px;
+        color: white;
+        font-size: 24px;
+    }
+/* Ocultamos hamburger */
+#menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 768px;
+        padding: 0;
+        display: block;
+    }
+
+    /* barra de navegación */
+        header nav{
+            width: 768px;
+            background-color: hsl(215, 37%, 10%);
+            transform: translateY( -220px );
+            transition: 500ms;
+            position: relative;
+            z-index: 10;
+        }
+        .desplegado{
+            transform: translateY(2px);
+        }
+            header nav a{
+                padding: 8px;
+                display: block;
+                text-align: center;
+            }
+
+    /* mostramos hamburger */
+    #menu{
+        display: block;
+        transform: translateX( 712px )
+                   translateY( -212px);
+    }
+}
