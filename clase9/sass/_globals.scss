@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$bg-color: hsl(0, 0%, 12%);
+$bg-gris: hsl(225, 20%, 16%);
+$white: hsl(0, 0%, 100%);
+$pink: hsl(330, 50%, 60%);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Raleway", system-ui;
+  background-color: $bg-color;
+}
+
+  a{
+    text-decoration: none;
+  }
