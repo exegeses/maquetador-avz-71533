@@ -28,7 +28,7 @@ header {
 header nav a {
   padding: 16px;
   font-size: 20px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 84%);
 }
 
 /* reglas para main */
@@ -36,6 +36,71 @@ main {
   width: 906px;
   min-height: 588px;
   margin: auto;
+}
+
+#botones {
+  width: 768px;
+  height: 320px;
+  margin: 128px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(0, 0%, 14%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px hsl(0, 0%, 20%);
+}
+
+hr {
+  width: 90%;
+}
+
+.btn {
+  padding: 10px 40px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 40%);
+}
+
+.btn-pill {
+  padding: 10px 32px;
+  border-radius: 32px;
+  border: 1px solid hsl(0, 0%, 40%);
+}
+
+.btn-white {
+  color: hsl(225, 20%, 16%);
+  background-color: hsl(0, 0%, 84%);
+  transition: 500ms;
+}
+.btn-white:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.btn-orange {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(21, 90%, 48%);
+  transition: 500ms;
+}
+.btn-orange:hover {
+  background-color: hsl(32, 95%, 44%);
+}
+
+.btn-green {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(142, 76%, 36%);
+  transition: 500ms;
+}
+.btn-green:hover {
+  background-color: hsl(142, 71%, 45%);
+}
+
+.btn-purple {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(271, 81%, 56%);
+  transition: 500ms;
+}
+.btn-purple:hover {
+  background-color: hsl(271, 91%, 65%);
 }
 
 /* reglas para footer */

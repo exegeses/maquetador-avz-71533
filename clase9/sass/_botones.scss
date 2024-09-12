@@ -1,0 +1,63 @@
+#botones{
+    width: 768px;
+    height: 320px;
+    margin: 128px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(0, 0%, 14%);
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px hsl(0, 0%, 20%);
+}
+hr{
+    width: 90%;
+}
+@mixin btn(
+            $px:10px, $py:40px,
+            $radius:8px,
+            $border-color: hsl(0, 0%, 40%)
+          )
+{
+    padding: $px $py;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+}
+.btn{
+    @include btn;
+}
+.btn-pill{
+    @include btn( 10px, 32px, 32px );
+}
+.btn-white{
+    color: $bg-gris;
+    background-color: $white;
+    transition: 500ms;
+    &:hover{
+        background-color: $white-hover;
+    }
+}
+.btn-orange{
+    color: $white-hover;
+    background-color: $orange;
+    transition: 500ms;
+    &:hover{
+        background-color: $orange-hover;
+    }
+}
+.btn-green{
+    color: $white-hover;
+    background-color: $green;
+    transition: 500ms;
+    &:hover{
+        background-color: $green-hover;
+    }
+}
+.btn-purple{
+    color: $white-hover;
+    background-color: $pruple;
+    transition: 500ms;
+    &:hover{
+        background-color: $pruple-hover;
+    }
+}
